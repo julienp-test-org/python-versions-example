@@ -2,7 +2,7 @@ name: python-versions-example
 runtime:
   name: python
   options:
-    virtualenv: venv
+    toolchain: poetry
 description: A minimal Python Pulumi program
 config:
   pulumi:tags:
