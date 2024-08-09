@@ -3,4 +3,6 @@
 import pulumi
 import sys
 
-pulumi.export("version", sys.version)
+v = sys.version_info
+
+pulumi.export("version", f"{v.major}.{v.minor}.{v.micro}")
